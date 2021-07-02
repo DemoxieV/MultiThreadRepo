@@ -9,28 +9,28 @@ public class Suspend2 {
             mainThrd.sleep(1000);
             mt1.mysuspend();
             mainThrd.setName("Главный поток. Приостановка Моего потока");
-            synchronized (mainThrd) {
+            synchronized (System.out) {
                 System.out.println(mainThrd.getName());
             }
-//            mainThrd.sleep(1000);
+            mainThrd.sleep(1000);
 
             mt1.myresume();
             mainThrd.setName("Главный поток. Возобновление Моего потока");
-            synchronized (mainThrd) {
+            synchronized (System.out) {
                 System.out.println(mainThrd.getName());
             }
             mainThrd.sleep(1000);
 
             mt1.mysuspend();
             mainThrd.setName("Главный поток. Приостановка Моего потока");
-            synchronized (mainThrd) {
+            synchronized (System.out) {
                 System.out.println(mainThrd.getName());
             }
 //            mainThrd.sleep(1000);
 
             mt1.myresume();
             mainThrd.setName("Главный поток. Возобновление Моего потока");
-            synchronized (mainThrd) {
+            synchronized (System.out) {
                 System.out.println(mainThrd.getName());
             }
             mainThrd.sleep(1000);
